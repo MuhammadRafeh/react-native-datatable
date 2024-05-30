@@ -1,0 +1,14 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["react", "react-native"],
+      "enabled": true,
+      "schedule": ["at any time"],
+      "groupName": "react and react-native updates",
+      "separateMajorMinor": false,
+      "separatePatchReleases": false,
+      "automerge": true
+    }
+  ]
+}
